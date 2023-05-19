@@ -11,14 +11,6 @@ const updateValue = () => {
 let count = 0;
 let intervalId = 0;
 
-plusButton.addEventListener('click', () => {
-    intervalId = setInterval(() => {
-        count = 1;
-        updateValue();
-    });
-});
-
-
 plusButton.addEventListener('mousedown', () => {
     intervalId = setInterval(() => {
         count += 1;
