@@ -12,8 +12,10 @@ let count = 0;
 let intervalId = 0;
 
 plusButton.addEventListener('click', () => {
-    count = 1;
-    updateValue();
+    intervalId = setInterval(() => {
+        count = 1;
+        updateValue();
+    });
 });
 
 
